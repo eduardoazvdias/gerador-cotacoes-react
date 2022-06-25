@@ -1,6 +1,6 @@
 # Controle de Orçamento
-<img align="left" alt="Controle-Financeiro" src="https://media.giphy.com/media/72HahsJD4atSE/giphy.gif" width="90" height="90">
-<br>&nbsp
+<img align="left" alt="Controle-Financeiro" src="https://media.giphy.com/media/72HahsJD4atSE/giphy.gif" width="75" height="75">
+<br>&nbsp&nbsp&nbsp&nbsp
 <i>Dedico esse projeto ao meu Pai e minha Avó</i><br><br><br>
 
 ## 💻 Sobre
