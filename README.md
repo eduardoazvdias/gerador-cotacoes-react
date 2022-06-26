@@ -34,7 +34,7 @@ Desenvolvido por <b>Eduardo Dias</b>, o projeto é uma aplicação de controle f
 </p>
 
 <p align="center">
-  <img alt="Tela Netflix Clone" src="./public/imagem_2022-06-25_145905937.png" height=450/>
+  <img alt="demo-app" src="./public/imagem_2022-06-25_145905937.png" height=450/>
 </p><br><br>
 
 
