@@ -35,6 +35,6 @@ Desenvolvido por <b>Eduardo Dias</b>, o projeto é uma aplicação de controle f
 
 <p align="center">
   <img alt="demo-app" src="./public/imagem_2022-06-25_145905937.png" height=450/>
-</p><br><br>
+</p><br><br> &nbsp;
 
 
