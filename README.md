@@ -20,8 +20,6 @@ Desenvolvido por <b>Eduardo Dias</b>, o projeto é uma aplicação de controle f
   
 :heavy_check_mark: Escopo Styled Components;
 
-:heavy_check_mark: Componetização valendo-se das melhores práticas;
-
 :heavy_check_mark: Adicionar e contabilizar entradas e saídas;
 
 :heavy_check_mark: Exclusão de itens e recálculo da aplicação;
