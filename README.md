@@ -1,5 +1,5 @@
 # Gerador de Cotação
-<img align="left" alt="Controle-Financeiro" src="https://media.giphy.com/media/72HahsJD4atSE/giphy.gif" width="75" height="75">
+<img align="left" alt="Controle-Financeiro" src="" width="75" height="75">
 <br>&nbsp&nbsp&nbsp&nbsp
 <i>Dedico esse projeto ao meu Pai e minha Avó</i><br><br><br>
 
@@ -32,7 +32,7 @@ Desenvolvido por <b>Eduardo Dias</b>, o projeto é uma aplicação de controle f
 </p>
 
 <p align="center">
-  <img alt="demo-app" src="./public/imagem_2022-06-25_145905937.png" height=450/>
+  <img alt="demo-app" src="" height=450/>
 </p><br><br> &nbsp;
 
 
