@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <C.Container>
       <C.Header>
-        <C.Title>  <img src={Img} width={700}/>    </C.Title>
+        <C.Title>  <img src={Img} alt={'teste'} width={700}/>    </C.Title>
       </C.Header>
     </C.Container>
     

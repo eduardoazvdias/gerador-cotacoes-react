@@ -7,7 +7,7 @@ import Info from '../Info'
 const Form = ({handleAdd, transactionsList ,setTransactionsList, total, setTotal}) => {
   const [desc, setDesc] = useState("");
   const [amount, setAmount] = useState("");
-  const [isExpense, setExpense] = useState(false);
+  const [isExpense] = useState(false);
   const [qty, setQty] = useState(1);
 
   const generateID = () => Math.round(Math.random() * 1000);

@@ -8,7 +8,7 @@ const Grid = ({itens, setItens, setTotal}) => {
     itens.map((transaction) => {
     totalTransactionValue += transaction.total;
     setTotal(totalTransactionValue);
-    })
+    });
 
     const onDelete = (ID) => {
         const newArray = itens.filter((transaction) => transaction.id !== ID);
