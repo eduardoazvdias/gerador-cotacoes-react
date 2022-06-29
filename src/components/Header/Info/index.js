@@ -14,11 +14,13 @@ const Info = ({Icon}) => {
             </C.Tr>
         </C.Thead>
         <C.Tbody>
+      <C.Tr>
         <C.Td>{`00${Math.round(Math.random() * 10000)}`}</C.Td>
         <C.Td>ACASO <br /> Endereço: ADE Conjunto 17 Lote 20 <br /> CNPJ: 13.360.379/0001-92 </C.Td>
         <C.Td>Tel: (61) 3036-1449 / 98249-2147 <br /> email: acasodf@gmail.com  <br />  website: http://acasodf.com.br </C.Td>
         <C.Td></C.Td>
         <C.Td></C.Td>
+        </C.Tr>
         </C.Tbody>
     </C.Table>
   )
