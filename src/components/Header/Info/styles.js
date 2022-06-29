@@ -2,18 +2,19 @@ import styled from "styled-components";
 
 export const Table = styled.table`
 width: 98%;
-background-color:#f8f8ff;
-padding: 20px;
+background-color:#fff;
+padding: 40px;
 box-shadow: 0px 0px 5px #ccc;
 border-radius: 5px;
 max-width: 1120px;
-margin: 6px auto;
+margin: 5px auto;
 `;
 
 export const Thead = styled.thead``;
 export const Tbody = styled.tbody``;
 export const Tr = styled.tr``;
 export const Tfoot = styled.tfoot``;
+export const Td = styled.td``;
 
 export const Th = styled.th`
 border-bottom: inset;

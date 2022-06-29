@@ -6,8 +6,8 @@ flex-direction: column;
 align-items: center;
 background-color: #fff;
 border-radius: 5px;
-padding: 5px 15px;
-width: 30%;
+padding: 5px 10px;
+width: 100%;
 
 @media (max-width: 750px){
     width: 20%;
@@ -26,11 +26,10 @@ width: 30%;
 
 export const Header = styled.header`
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
-    gap: 10px;
-    margin: 20px auto;
+    margin: 10px auto;
+    padding-left: 20px;
 
     svg {
         width: 25px;
@@ -39,10 +38,17 @@ export const Header = styled.header`
 `;
 
 export const HeaderTitle = styled.p`
-    font-size: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    
 `;
 
 export const Total = styled.span`
-    font-size: 30px;
+    font-size: 19px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
 `;

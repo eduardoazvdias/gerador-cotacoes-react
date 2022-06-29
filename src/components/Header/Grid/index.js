@@ -1,34 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import GridItem from "../GridItem"
 import * as C from "./styles";
 
-
-const Grid = ({itens, setItens, setTotal, total }) => {
+const Grid = ({itens, setItens, setTotal}) => {
     
     let totalTransactionValue = 0;
     itens.map((transaction) => {
     totalTransactionValue += transaction.total;
     setTotal(totalTransactionValue);
     })
-    
-
 
     const onDelete = (ID) => {
         const newArray = itens.filter((transaction) => transaction.id !== ID);
         setItens(newArray);
         localStorage.setItem("transactions", JSON.stringify(newArray));
     };
-
-    /*useEffect(()=>{
-        if(itens && itens.length > 0){
-
-            const total = itens.reduce((acc, cur) => acc.total + cur.total )
-            
-        }
-
-    }, [itens])
-*/
-
 
 
   return (
@@ -48,12 +34,6 @@ const Grid = ({itens, setItens, setTotal, total }) => {
                 
             ))}
         </C.Tbody>
-        <C.Tfoot>
-            <C.Tr> 
-                <C.Th> VALOR TOTAL </C.Th>
-                <C.Th>{totalTransactionValue}</C.Th>
-            </C.Tr>
-        </C.Tfoot>
     </C.Table>
   )
 }
