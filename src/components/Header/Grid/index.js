@@ -19,19 +19,11 @@ const Grid = ({itens, setItens, setTotal, total }) => {
         localStorage.setItem("transactions", JSON.stringify(newArray));
     };
 
-    /*useEffect(()=>{
-        if(itens && itens.length > 0){
-
-            const total = itens.reduce((acc, cur) => acc.total + cur.total )
-            
-        }
-
-    }, [itens])
-*/
-
-
-
   return (
+    <>
+    
+
+
     <C.Table>
         <C.Thead>
             <C.Tr>
@@ -48,13 +40,8 @@ const Grid = ({itens, setItens, setTotal, total }) => {
                 
             ))}
         </C.Tbody>
-        <C.Tfoot>
-            <C.Tr> 
-                <C.Th> VALOR TOTAL </C.Th>
-                <C.Th>{totalTransactionValue}</C.Th>
-            </C.Tr>
-        </C.Tfoot>
     </C.Table>
+    </>
   )
 }
 

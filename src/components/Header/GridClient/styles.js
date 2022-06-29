@@ -10,7 +10,9 @@ max-width: 1120px;
 margin: 20px auto;
 `;
 
-export const Thead = styled.thead``;
+export const Thead = styled.thead`
+display: block;
+`;
 export const Tbody = styled.tbody``;
 export const Tr = styled.tr``;
 export const Tfoot = styled.tfoot``;

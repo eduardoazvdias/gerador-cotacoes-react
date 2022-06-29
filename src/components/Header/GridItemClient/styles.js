@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Tr = styled.tr``;
+export const Tr = styled.tr`
+display:block;
+`;
 
 export const Td = styled.td`
    
