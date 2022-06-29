@@ -13,10 +13,11 @@ margin: 20px auto;
 export const Thead = styled.thead``;
 export const Tbody = styled.tbody``;
 export const Tr = styled.tr``;
+export const Tfoot = styled.tfoot``;
 
 export const Th = styled.th`
 border-bottom: inset;
 padding-bottom: 5px;
-text-align: ${(props) => (props.alignCenter ? "center" : "start")};
+text-align: start;
 width: ${(props) => (props.width ? props.width + "%" : "auto")};
 `;

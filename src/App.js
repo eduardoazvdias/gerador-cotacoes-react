@@ -10,27 +10,31 @@ const App = () => {
     data ? JSON.parse(data) : []
   );
   
-  const [income, setIncome] = useState(0);
-  const [expense, setExpense] = useState(0);
-  const [total, setTotal] = useState(0);
-
+  //const [income, setIncome] = useState(0);
+  //const [expense, setExpense] = useState(0);
+  
+    
   useEffect(() => {
-    const amountExpense = transactionsList
-      .filter((item) => item.expense)
-      .map((transaction) => Number(transaction.amount));
+      //const amountExpense = transactionsList
+      //.filter((item) => item.expense)
+      //.map((transaction) => Number(transaction.amount));
 
-      const amountIncome = transactionsList
-      .filter((item) => !item.expense)
-      .map((transaction) => Number(transaction.amount));
+      //const qtyItens = transactionsList
+      //.map((transaction) => Number(transaction.qty));
 
-      const expense = amountExpense.reduce((acc, cur) => acc + cur, 0).toFixed(2);
-      const income = amountIncome.reduce((acc, cur) => acc + cur, 0).toFixed(2);
+      //const amountIncome = transactionsList
+      //.filter((item) => !item.expense)
+      //.map((transaction) => Number(transaction.amount));    
+      
+      //const expense = amountExpense.reduce((acc, cur) => acc + cur, 0).toFixed(2);
+      //const income = amountIncome.reduce((acc, cur) => acc + cur, 0).toFixed(2);
 
-      const total = Math.abs(income - expense).toFixed(2);
 
-      setIncome(`R$ ${income}`);
-      setExpense(`R$ ${expense}`);
-      setTotal(`${Number(income) < Number(expense) ? "-" : ""}R$ ${total}`);
+      //setIncome(`R$ ${income}`);
+      //setExpense(`R$ ${expense}`);
+      //setTotal(`${total}`);
+      //const ttV = transactionsList
+      //.map((transaction) => Number(transaction.amount));
 
   }, [transactionsList]);
 
@@ -38,15 +42,27 @@ const App = () => {
     const newArrayTransactions = [...transactionsList, transaction];
 
     setTransactionsList(newArrayTransactions);
-
     localStorage.setItem("transactions", JSON.stringify(newArrayTransactions));
-  };
+
+  };  
+    
+  const [total, setTotal] = useState(0);
+
 
   return (
     <div>
     <Header />
-    <Resume income={income} expense={expense} total={total} />
-    <Form handleAdd={handleAdd} transactionsList={transactionsList} setTransactionsList={setTransactionsList}/>
+      <Resume 
+        total={total}
+        
+        />
+      <Form 
+        handleAdd={handleAdd} 
+        transactionsList={transactionsList} 
+        setTransactionsList={setTransactionsList}
+        setTotal={setTotal}
+        />
+
     <GlobalStyle />
     </div>
   );

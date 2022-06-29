@@ -3,10 +3,11 @@ import Grid from '../Grid';
 import * as C from "./styles";
 
 
-const Form = ({handleAdd, transactionsList ,setTransactionsList }) => {
+const Form = ({handleAdd, transactionsList ,setTransactionsList, total, setTotal}) => {
   const [desc, setDesc] = useState("");
   const [amount, setAmount] = useState("");
   const [isExpense, setExpense] = useState(false);
+  const [qty, setQty] = useState(1);
 
   const generateID = () => Math.round(Math.random() * 1000);
 
@@ -23,13 +24,16 @@ const Form = ({handleAdd, transactionsList ,setTransactionsList }) => {
     const transaction = {
       id: generateID(),
       desc: desc,
+      qty: qty,
       amount: amount,
+      total: qty * amount,
       expense: isExpense,
     };
 
     handleAdd(transaction);
     setDesc("");
     setAmount("");
+    setQty("");
 
   };
 
@@ -46,6 +50,14 @@ const Form = ({handleAdd, transactionsList ,setTransactionsList }) => {
           value={amount}
           type="number"
           onChange={(e) => setAmount(e.target.value)}
+          />
+        </C.InputContent>
+        <C.InputContent>
+          <C.Label>Quantidade</C.Label>
+          <C.Input
+          value={qty}
+          type="number"
+          onChange={(e) => setQty(e.target.value)}
           />
         </C.InputContent>
         <C.RadioGroup>
@@ -67,7 +79,14 @@ const Form = ({handleAdd, transactionsList ,setTransactionsList }) => {
         </C.RadioGroup>
         <C.Button onClick={handleSave}>ADICIONAR</C.Button>
       </C.Container>  
-      <Grid itens={transactionsList} setItens={setTransactionsList}/>
+      <Grid 
+      itens={transactionsList}
+      setItens={setTransactionsList} 
+      qty={qty}
+      total={total}
+      setTotal={setTotal}
+
+      />
     </>
   );
 };
