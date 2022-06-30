@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Table = styled.table`
+export const Table1 = styled.table`
 width: 98%;
 background-color:#fff;
 padding: 40px;
@@ -10,13 +10,13 @@ max-width: 1120px;
 margin: 5px auto;
 `;
 
-export const Thead = styled.thead``;
-export const Tbody = styled.tbody``;
-export const Tr = styled.tr``;
-export const Tfoot = styled.tfoot``;
-export const Td = styled.td``;
+export const Thead1 = styled.thead``;
+export const Tbody1 = styled.tbody``;
+export const Tr1 = styled.tr``;
+export const Tfoot1 = styled.tfoot``;
+export const Td1 = styled.td``;
 
-export const Th = styled.th`
+export const Th1 = styled.th`
 border-bottom: inset;
 padding-bottom: 5px;
 text-align: start;
