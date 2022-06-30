@@ -6,11 +6,7 @@ const Header = () => {
   return (
     <C.Container>
       <C.Header>
-<<<<<<< HEAD
-        <C.Title>  <img src={Img} alt={'teste'} width={700}/>    </C.Title>
-=======
-        <C.Title> Gerador de Orçamento </C.Title>
->>>>>>> b613de63f056ba200a43e1d4693511a2b7d0da4c
+        <C.Title>  <img src={Img}  width={700}/>    </C.Title>
       </C.Header>
     </C.Container>
     
