@@ -16,8 +16,15 @@ const Grid = ({itens, setItens, setTotal}) => {
         localStorage.setItem("transactions", JSON.stringify(newArray));
     };
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b613de63f056ba200a43e1d4693511a2b7d0da4c
   return (
+    <>
+    
+
+
     <C.Table>
         <C.Thead>
             <C.Tr>
@@ -35,6 +42,7 @@ const Grid = ({itens, setItens, setTotal}) => {
             ))}
         </C.Tbody>
     </C.Table>
+    </>
   )
 }
 

@@ -3,7 +3,6 @@ import Grid from '../Grid';
 import * as C from "./styles";
 import Info from '../Info'
 
-
 const Form = ({handleAdd, transactionsList ,setTransactionsList, total, setTotal}) => {
   const [desc, setDesc] = useState("");
   const [amount, setAmount] = useState("");
@@ -63,8 +62,12 @@ const Form = ({handleAdd, transactionsList ,setTransactionsList, total, setTotal
           />
         </C.InputContent>
         <C.Button onClick={handleSave}>ADICIONAR</C.Button>
+<<<<<<< HEAD
       </C.Container>  
       <Info />
+=======
+      </C.Container> 
+>>>>>>> b613de63f056ba200a43e1d4693511a2b7d0da4c
       <Grid 
       itens={transactionsList}
       setItens={setTransactionsList} 
